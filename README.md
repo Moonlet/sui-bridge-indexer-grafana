@@ -86,4 +86,11 @@ volumes:
 ```
 
 
+- start the docker:
+
+```
+docker-compose up -d
+```
+
+
 Dashboard provided by [Moonlet](https://moonlet.io)
