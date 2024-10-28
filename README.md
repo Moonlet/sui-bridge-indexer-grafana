@@ -29,7 +29,7 @@ This condition helps to detect a potential slowdown or halt in data ingestion by
 
 # Run SUI bridge indexer using docker compose
 
-- update `config.yml` ![config.yml](./run-sui-bridge-indexer/config.yml)
+- update [config.yml](./run-sui-bridge-indexer/config.yml)
 
 ```
 ---
@@ -50,7 +50,7 @@ eth_bridge_genesis_block: 20811249 # <-- mainnet, 5997013 for testnet
 eth_ws_url: [[ETH_WS_URL]]
 ```
 
-- run using docker compose ![docker-compose](./run-sui-bridge-indexer/docker-compose.yml)
+- run using [docker-compose.yml](./run-sui-bridge-indexer/docker-compose.yml)
 
 ```
 version: '3.7'
