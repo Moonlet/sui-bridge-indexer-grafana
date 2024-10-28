@@ -2,7 +2,7 @@
 
 This Grafana dashboard is designed to monitor the performance and status of the Sui Bridge Indexer. It provides real-time metrics and insights into bridge-related transactions, tasks, checkpoints, and the state of the Sui network using Prometheus as the data source.
 
-![overview](./images/1.png)
+![overview](./images/6.png)
 
 
 
@@ -18,7 +18,7 @@ This condition helps to detect a potential slowdown or halt in data ingestion by
 
 
 # More panels
-![overview](./images/2.png)
+![overview](./images/7.png)
 
 ![overview](./images/3.png)
 
