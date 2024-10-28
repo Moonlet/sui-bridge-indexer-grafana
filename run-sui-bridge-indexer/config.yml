@@ -1,0 +1,16 @@
+---
+remote_store_url: https://checkpoints.mainnet.sui.io
+eth_rpc_url: [[ETH_RPC_URL]]
+sui_rpc_url: [[SUI_RPC_URL]]
+
+concurrency: 500
+checkpoints_path: /home/sui-bridge-indexer/indexer-data
+
+eth_sui_bridge_contract_address: 0xda3bD1fE1973470312db04551B65f401Bc8a92fD # <-- mainnet, 0xAE68F87938439afEEDd6552B0E83D2CbC2473623 for testnet
+metric_port: 9185
+
+sui_bridge_genesis_checkpoint: 55455583 # <-- mainnet, 43917829 for testnet
+# genesis block number for eth
+eth_bridge_genesis_block: 20811249 # <-- mainnet, 5997013 for testnet
+
+eth_ws_url: [[ETH_WS_URL]]

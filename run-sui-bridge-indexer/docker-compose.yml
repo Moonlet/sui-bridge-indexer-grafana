@@ -1,0 +1,30 @@
+version: '3.7'
+
+services:
+  bridge-indexer:
+    image: mysten/sui-tools:4e46da89efd5c5e59fe2b8e877bd960896601ec9
+    container_name: bridge-indexer
+    command: bridge-indexer --config-path /app/config.yaml
+    volumes:
+      - /home/sui-bridge-indexer/config.yaml:/app/config.yaml
+    environment:
+      - DB_URL=postgres://postgres:[[POSTGRES_USER]]@[[POSTGRES_PASSWORD]]:5432/bridge
+    depends_on:
+      - postgres
+    ports:
+      - 9185:9185
+  postgres:
+    image: postgres:13
+    container_name: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: [[POSTGRES_USER]]
+      POSTGRES_PASSWORD: [[POSTGRES_PASSWORD]]
+      POSTGRES_DB: bridge
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+
+volumes:
+  pgdata:
