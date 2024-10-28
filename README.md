@@ -1,4 +1,4 @@
-# Sui Bridge - Indexer Dashboard
+# Sui Bridge Indexer - Dashboard
 
 This Grafana dashboard is designed to monitor the performance and status of the Sui Bridge Indexer. It provides real-time metrics and insights into bridge-related transactions, tasks, checkpoints, and the state of the Sui network using Prometheus as the data source.
 
