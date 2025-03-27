@@ -4,6 +4,7 @@ services:
   bridge-indexer:
     image: mysten/sui-tools:4e46da89efd5c5e59fe2b8e877bd960896601ec9
     container_name: bridge-indexer
+    restart: unless-stopped
     command: bridge-indexer --config-path /app/config.yaml
     volumes:
       - /home/sui-bridge-indexer/config.yaml:/app/config.yaml
